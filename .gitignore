@@ -11,6 +11,7 @@
 .mtj.tmp/
 
 teknos/target/
+teknos/src/test
 
 # Package Files #
 *.jar
