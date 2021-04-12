@@ -11,7 +11,7 @@ public class P509 {
         int columnes, files;
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> minimoBateria = new ArrayList<>(), resultados = new ArrayList<>(), altitud = new ArrayList<>();
-        while (scanner.hasNextInt()) {
+        while (scanner.hasNext()) {
             columnes = scanner.nextInt();
             files = scanner.nextInt();
             for (int i = 0; i < files; i++) {
