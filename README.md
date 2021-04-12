@@ -7,6 +7,10 @@ Un Hello World X vegades XD, res mes
 ```
 Proximament...
 ```
+- Problema 210: Primo de riesgo (INACABAT!!!)
+```
+Proximament...
+```
 - Problema 344: Conectando cables
 ```
 Proximament...
