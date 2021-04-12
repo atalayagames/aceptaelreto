@@ -8,31 +8,31 @@ import java.util.Scanner;
 
 public class P509 {
     public static void main(String[] args) {
-        int c, f;
-        Scanner s = new Scanner(System.in);
-        ArrayList < Integer > m = new ArrayList < > (), r = new ArrayList < > (), a = new ArrayList < > ();
-        while (s.hasNextInt()) {
-            c = s.nextInt();
-            f = s.nextInt();
-            for (int i = 0; i < f; i++) {
-                r.add(i, 2);
-                m.add(i, 2);
-                for (int j = 0; j < c; j++) {
-                    a.add(j, s.nextInt());
-                    r.set(i, r.get(i) + a.get(j));
-                    if (r.get(i) < 2 && a.get(j) < 0)
-                        while (a.get(j) < 0) {
-                            m.set(i, m.get(i) + 1);
-                            a.set(j, a.get(j) + 1);
+        int columnes, files;
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> minimoBateria = new ArrayList<>(), resultados = new ArrayList<>(), altitud = new ArrayList<>();
+        while (scanner.hasNextInt()) {
+            columnes = scanner.nextInt();
+            files = scanner.nextInt();
+            for (int i = 0; i < files; i++) {
+                resultados.add(i, 2);
+                minimoBateria.add(i, 2);
+                for (int j = 0; j < columnes; j++) {
+                    altitud.add(j, scanner.nextInt());
+                    resultados.set(i, resultados.get(i) + altitud.get(j));
+                    if (resultados.get(i) < 2 && altitud.get(j) < 0)
+                        while (altitud.get(j) < 0) {
+                            minimoBateria.set(i, minimoBateria.get(i) + 1);
+                            altitud.set(j, altitud.get(j) + 1);
                         }
                 }
             }
-            Collections.sort(m);
-            System.out.println(m.get(0));
-            m.clear();
-            r.clear();
-            a.clear();
+            Collections.sort(minimoBateria);
+            System.out.println(minimoBateria.get(0));
+            minimoBateria.clear();
+            resultados.clear();
+            altitud.clear();
         }
-        s.close();
+        scanner.close();
     }
 }
