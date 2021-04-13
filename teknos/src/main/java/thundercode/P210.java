@@ -9,17 +9,15 @@ public class P210 {
         Scanner sc = new Scanner(System.in);
         int times = sc.nextInt();
         for (int i = 0; i < times; i++) {
-            System.out.println(primProper(sc.next()));
+            System.out.println(primProper(sc.nextLine()));
         }
         sc.close();
     }
     public static int primProper(String item) {
         int total = 0;
         for (char c : item.toCharArray()) total += (int) c;
-        int gran = total, petit = total;
-        while(!esPrim(gran)) ++gran;
-        while(!esPrim(petit)) --petit;
-        return (gran - total) > (total - petit) ? petit : gran;
+        while(!esPrim(total)) --total;
+        return total;
     }
     public static boolean esPrim(int numero){
         int contador = 0;
