@@ -9,6 +9,7 @@ public class P210 {
         Scanner sc = new Scanner(System.in);
         int total = 0, times = sc.nextInt();
         String item;
+        sc.nextLine();
         for (int i = 0; i < times; i++) {
             item = sc.nextLine();
             for (char c : item.toCharArray()) total += (int) c;
