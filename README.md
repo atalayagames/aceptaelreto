@@ -7,7 +7,7 @@ Un Hello World X vegades XD, res mes
 ```
 Proximament...
 ```
-- Problema 210: Primo de riesgo (INACABAT!!!)
+- ###Problema 210: Primo de riesgo
 ```
 Proximament...
 ```
