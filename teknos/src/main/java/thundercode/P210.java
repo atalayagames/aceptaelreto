@@ -22,7 +22,10 @@ public class P210 {
     
     public static boolean esPrim(int numero){
         int contador = 0;
-        for (int i = numero; i > 0; i--) if (numero % i == 0) contador++;
-        return contador == 2;
+        for (int i = numero; i > 0; i--) {
+            if (numero % i == 0) contador++;
+            if (contador > 2) return false;
+        }
+        return true;
     }
 }
