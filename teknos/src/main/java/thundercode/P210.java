@@ -21,7 +21,7 @@ public class P210 {
         sc.close();
     }
     
-    public static boolean esPrim(int numero){
+    public static boolean esPrim(int numero) {
         int contador = 0;
         for (int i = 2; i < numero; i++) {
             if (numero % i == 0) contador++;
