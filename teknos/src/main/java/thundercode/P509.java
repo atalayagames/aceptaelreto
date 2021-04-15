@@ -9,9 +9,12 @@ import java.util.Scanner;
 public class P509 {
     public static void main(String[] args) {
         int columnes, files;
-        Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> minimoBateria = new ArrayList<>();
-        while (scanner.hasNextInt()) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            if(!scanner.hasNextInt()){
+                break;
+            }
             columnes = scanner.nextInt();
             files = scanner.nextInt();
             for (int i = 0; i < files; i++) {
