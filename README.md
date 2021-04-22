@@ -14,3 +14,4 @@
 - #### Problema 577: Cucharadas de sopa
 - #### Problema 578: Haciendo inventario
 - #### Problema 579: Felipe y sus tareas
+- Problema 580: Foto con Mafalda
