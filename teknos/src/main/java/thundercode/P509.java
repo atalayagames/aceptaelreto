@@ -8,16 +8,16 @@ import java.util.Scanner;
 
 public class P509 {
     public static void main(String[] args) {
-        int columnes, files, altitud, resultados, minB;
+        int columnes, files, altitud, resultados, minB = 2;
         ArrayList<Integer> minimoBateria = new ArrayList<>();
         final Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             files = scanner.nextInt();
             columnes = scanner.nextInt();
             for (int i = 0; i < files; i++) {
-                resultados = 2;
-                minB = 2;
                 for (int j = 0; j < columnes; j++) {
+                    resultados = 0;
+                    minB = 2;
                     altitud = scanner.nextInt();
                     resultados += altitud;
                     if (resultados < 2 && altitud < 0) {
