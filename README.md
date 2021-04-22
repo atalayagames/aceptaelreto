@@ -1,6 +1,7 @@
 ## Problemes resolts d'AceptaElReto per el grup ThunderCode
 - #### Problema 116: ¡Hola mundo!
 - #### Problema 123: Conjugar verbos
+- Problema 143: Leyendo el diccionario
 - #### Problema 210: Primo de riesgo
 - #### Problema 344: Conectando cables
 - #### Problema 364: Espionaje en Navidad
