@@ -11,4 +11,5 @@
 - #### Problema 532: Reduciendo envases
 - #### Problema 533: La botella ganadora
 - #### Problema 535: Desembalse
-- Problema 577: Cucharadas de sopa
+- #### Problema 577: Cucharadas de sopa
+- #### Problema 578: Haciendo inventario
