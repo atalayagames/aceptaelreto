@@ -1,9 +1,6 @@
 package thundercode;
-
 //Puntos de silla
-
 import java.util.Scanner;
-
 public class P600 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,11 +17,11 @@ public class P600 {
         sc.close();
     }
     public static boolean filaValida(int index, int[][] matriu) {
-        for (int i = 0; i < matriu[index].length; i++) if(matriu[index][0] > matriu[index][i]) return false;
+        for (int i = 1; i < matriu[index].length; i++) if(matriu[index][0] > matriu[index][i]) return false;
         return true;
     }
     public static boolean columnaValida(int index, int[][] matriu) {
-        for (int i = 0; i < matriu.length; i++) if(matriu[0][index] < matriu[i][index]) return false;
+        for (int i = 1; i < matriu.length; i++) if(matriu[0][index] < matriu[i][index]) return false;
         return true;
     }
 }
