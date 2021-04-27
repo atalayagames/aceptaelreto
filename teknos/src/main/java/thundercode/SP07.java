@@ -7,25 +7,40 @@ public class SP07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int count;
-        ArrayList<Integer> r;
-        ArrayList<Integer> a;
-        ArrayList<Integer> v;
+        ArrayList<Boolean> r = new ArrayList<>();
+        ArrayList<Boolean> a = new ArrayList<>();
+        ArrayList<Boolean> v = new ArrayList<>();
         String linia;
         while(sc.hasNext()){
-            r = new ArrayList<>();
-            a = new ArrayList<>();
-            v = new ArrayList<>();
             int ir = 0;
             int ia = 0;
             int iv = 0;
             linia = sc.nextLine();
             count = 0;
             for (int i = 0; i < linia.length(); i++) {
-                if(r.size() > 0){
-                    if(r.get(ir))
+                r.add(false);
+                a.add(false);
+                v.add(false);
+                if(linia.charAt(i) == 'R'){
+                    r.set(ir, true);
+                    ir++;
+                } else if(linia.charAt(i) == 'A'){
+                    if(r.get(ia)){
+                        a.set(ia, true);
+                        ia++;
+                    }
+                } else if(linia.charAt(i) == 'V'){
+                    if(a.get(iv)){        
+                        v.set(iv, true);
+                        iv++;
+                        count++;
+                    }
                 }
             }
             System.out.println(count);
+            r.clear();
+            a.clear();
+            v.clear();
         }
     }
 }
