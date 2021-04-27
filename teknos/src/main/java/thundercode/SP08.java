@@ -5,23 +5,34 @@ import java.util.Scanner;
 
 public class SP08 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int casos = sc.nextInt();
-        int i1, i2;
+
+        Scanner s = new Scanner(System.in);
+
+        int casos = s.nextInt();
+        int pI, pF;
+
         for (int i = 0; i < casos; i++) {
-            i1 = sc.nextInt();
-            i2 = sc.nextInt();
-            int dif1 = Math.abs(i1 - i2) + (360 - i2);
-            int dif2 = (360 - i2) + i1;
-            if (dif1 == dif2) {
+
+            pI = s.nextInt();
+            pF = s.nextInt();
+
+            int dif = Math.abs(pI - pF);
+
+            if (dif == 180 || dif == 360 || dif == 0) {
                 System.out.println("DA IGUAL");
-            }
-            if (dif1 < dif2) {
-                System.out.println("ASCENDENTE");
             } else {
-                System.out.println("DESCENDENTE");
+                if (dif < 180) {
+                    if (pI < pF)
+                        System.out.println("ASCENDENTE");
+                    else
+                        System.out.println("DESCENDENTE");
+                } else {
+                    if (pI < pF)
+                        System.out.println("DESCENDENTE");
+                    else
+                        System.out.println("ASCENDENTE");
+                }
             }
         }
-        sc.close();
     }
 }
