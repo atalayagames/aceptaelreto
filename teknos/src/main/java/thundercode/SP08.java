@@ -16,7 +16,7 @@ public class SP08 {
             if (dif1 == dif2) {
                 System.out.println("DA IGUAL");
             }
-            if (dif1 > dif2) {
+            if (dif1 < dif2) {
                 System.out.println("ASCENDENTE");
             } else {
                 System.out.println("DESCENDENTE");
